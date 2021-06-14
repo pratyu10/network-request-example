@@ -1,7 +1,7 @@
 package com.developersbreach.networkrequestexercise
 
 const val POSTER_APPEND_URL = "https://image.tmdb.org/t/p/w500"
-const val MOVIE_URL = "https://api.themoviedb.org/3/movie/popular?api_key=d77b5ab884174f60f4c9e8f50a70d99c"
+const val MOVIE_URL = "https://api.themoviedb.org/3/movie/popular?api_key="
 
 
 fun getMovieData(): List<Movie> {
