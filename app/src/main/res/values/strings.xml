@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NetworkRequestExercise</string>
+    <string name="popular_movie_type">Popular</string>
+    <string name="top_rated_movie_type">Top Rated</string>
+</resources>
