@@ -1,0 +1,2 @@
+rootProject.name = "NetworkRequestExercise"
+include ':app'
