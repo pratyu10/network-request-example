@@ -33,8 +33,10 @@ class DetailFragment : Fragment() {
 
         val detailTitleTextView = view.findViewById<TextView>(R.id.movie_title_detail_text_view)
         val detailMovieImageView = view.findViewById<ImageView>(R.id.movie_banner_detail_image_view)
+        val detailOverviewTextView = view.findViewById<TextView>(R.id.movie_overview)
 
         detailTitleTextView.text = movie.title
+        detailOverviewTextView.text= movie.overview
         Glide.with(requireContext()).load(movie.poster).circleCrop().into(detailMovieImageView)
     }
 }

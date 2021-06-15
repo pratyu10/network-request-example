@@ -4,8 +4,8 @@ import org.json.JSONObject
 import java.net.URL
 
 const val POSTER_APPEND_URL = "https://image.tmdb.org/t/p/w500"
-const val MOVIE_URL =
-    "https://api.themoviedb.org/3/movie/popular?api_key="
+const val MOVIE_URL = "https://api.themoviedb.org/3/movie/popular?api_key=d77b5ab884174f60f4c9e8f50a70d99c"
+
 
 
 fun getMovieData(): List<Movie> {
@@ -45,9 +45,10 @@ fun fetchJsonMovieData(
         // Get all the properties from object lastly created
         val title = movieJsonObjects.getString("title")
         val poster = POSTER_APPEND_URL + movieJsonObjects.getString("poster_path")
+        val overview = movieJsonObjects.getString("overview")
 
         // Return all those properties of type new movie object
-        val movie = Movie(title, poster)
+        val movie = Movie(title, poster, overview)
 
         // Add each object to empty ArrayList which we have created
         movieListData.add(movie)
